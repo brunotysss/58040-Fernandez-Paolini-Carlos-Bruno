@@ -52,18 +52,86 @@
     </div>
   </header>
 
-  <main class="main-productos">
+ <main class="main-productos">
     <section class="category-section">
-      <h3>Todas Las Categorias</h3>
-      <ul class="navbar-category">
-        <li><a href="#" data-category="electronica">Electrónica</a></li>
-        <li><a href="#" data-category="cocina">Cocina</a></li>
-        <li><a href="#" data-category="jardineria">Jardinería</a></li>
-      </ul>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Todas las categorías</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="impresorasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Impresoras 3D <span class="arrow-down"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="impresorasDropdown">
+                <a class="dropdown-item" href="#">Accesorios</a>
+                <a class="dropdown-item" href="#">Modelo de prueba</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="disenoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Diseño artístico <span class="arrow-down"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="disenoDropdown">
+                <a class="dropdown-item" href="#">Placas 2D y Logos</a>
+                <a class="dropdown-item" href="#">Esculturas</a>
+                <a class="dropdown-item" href="#">Lámparas</a>
+                <a class="dropdown-it em" href="#">Otro arte y diseño</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="casaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Casa <span class="arrow-down"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="casaDropdown">
+                <a class="dropdown-item" href="#">Cocina</a>
+                <a class="dropdown-item" href="#">Baño</a>
+                <a class="dropdown-item" href="#">Dormitorio</a>
+                <a class="dropdown-item" href="#">Decoración del hogar</a>
+                <a class="dropdown-item" href="#">Oficina</a>
+                <a class="dropdown-item" href="#">Mascota</a>
+                <a class="dropdown-item" href="#">Sala</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
     </section>
     <section class="product-section">
       <h2>Listado de productos</h2>
       <div class="product-grid">
+        <div class="product-item">
+          <div class="card">
+            <div class="img-container">
+              <img src="../img/225-2256239_web-en-construccion-png-sitio-en-construccion.jpg" class="card-img-top" alt="Producto 1">
+              <!-- Botón "Agregar al carrito" -->
+              <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Producto 1</h3>
+              <p class="card-text">$99.99</p>
+              <p class="installments">6 cuotas sin interés</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="card">
+            <div class="img-container">
+              <img src="../img/225-2256239_web-en-construccion-png-sitio-en-construccion.jpg" class="card-img-top" alt="Producto 1">
+              <!-- Botón "Agregar al carrito" -->
+              <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Producto 1</h3>
+              <p class="card-text">$99.99</p>
+              <p class="installments">6 cuotas sin interés</p>
+            </div>
+          </div>
+        </div>
         <div class="product-item">
           <div class="card">
             <div class="img-container">
@@ -93,6 +161,7 @@
             </div>
           </div>
         </div>
+      
         <!-- Fin de los productos -->
       </div>
       <div class="pagination">
