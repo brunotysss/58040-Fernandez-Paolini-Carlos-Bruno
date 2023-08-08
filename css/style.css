@@ -196,12 +196,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "social-media site-links help account";
+    gap: 15px;
+    margin: 3%;
 }
 
 .social-media,
 .site-links,
 .help,
 .account {
+  grid-area: social-media,site-links,help,account;
     flex-basis: 25%;
 }
 
@@ -240,9 +246,8 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 5px; /* Margen general para separar del borde de la página */
   display: grid;
-  grid-template-columns: 5fr 1.5fr;
+  grid-template-columns: 6fr 1.5fr;
   grid-template-areas: "content-section advertisement-section";
 }
 
@@ -280,8 +285,12 @@ ul li {
 }
 
 .content-section {
-    width: 70%; /* Ancho del contenedor de contenido */
-    margin-right: 20px; /* Margen derecho para separar de la sección de categorías */
+  margin: 10%; /* Margen general para separar del borde de la página */
+  width: 90%; /* Ancho del contenedor de contenido */
+  margin-right: 20px; /* Margen derecho para separar de la sección de categorías */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content-section > section {
@@ -318,13 +327,14 @@ ul li {
   height: auto;
 }
 
+
 /* Estilos para la cuadrícula de imágenes */
 .image-grid {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+
 }
 
 .image-grid img {
@@ -337,6 +347,11 @@ ul li {
   grid-area: advertisement-section;
   flex: 1; /* Utilizar espacio flexible */
   text-align: center;
+  
+  position: sticky;
+  top: 20px; /* Ajusta el valor según tu diseño para evitar que se superponga con el contenido */
+  z-index: 1000; /* Asegura que la sección esté por encima del contenido al desplazarse */
+  padding: 20px; /* Añade una cantidad de espacio interno para separar el contenido */
   
 }
 
@@ -360,7 +375,18 @@ ul li {
   max-width: 100%; /* Asegurar que las imágenes no se desborden */
   margin-bottom: 35px; /* Aumentar el espacio vertical entre las imágenes */
   
+
+  
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -431,6 +457,8 @@ button[type="submit"] {
   .product-item {
     position: relative;
     overflow: hidden;
+    width: 40%; /* Ajusta el ancho deseado */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
   }
   
   .product-item img {
@@ -579,6 +607,8 @@ button[type="submit"] {
     width: 100%;
   }
 }
+
+
 
 
 
