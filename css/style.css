@@ -1,14 +1,5 @@
 /* Estilos generales */
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    background-color: var(--color-background);
-    
 
-}
 :root {
   /* Colores principales */
   --color-primary: #f9f9f9;   /* Blanco hueso */
@@ -22,6 +13,28 @@ html {
 
   /* Colores de texto */
   --color-text: #333333;       /* Negro suave */
+  
+  --font-primary: 'Roboto', sans-serif; /* Fuente principal */
+  --font-heading: 'Open Sans', sans-serif; /* Fuente para títulos */
+  --font-nav: 'Montserrat', sans-serif; /* Fuente para elementos de navegación */
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    
+}
+/* Aplicar la fuente de títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+/* Aplicar la fuente de navegación */
+.navbar a {
+  font-family: var(--font-nav);
 }
 
 iframe {
@@ -33,6 +46,7 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 
 /* Estilos para el contenedor del header */
 /* Estilos para el header */
@@ -239,9 +253,9 @@ ul li {
 
 
 
-/* Estilos para el contenido principal de la seccion productos */
 
-/* Estilos para el contenedor principal */
+
+/* Estilos para el contenedor principal del index de la pagina principal MAIN */
 .main-index {
   display: flex;
   justify-content: space-between;
@@ -378,18 +392,6 @@ ul li {
 
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
