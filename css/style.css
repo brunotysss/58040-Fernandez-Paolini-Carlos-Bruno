@@ -237,7 +237,7 @@ ul li {
   align-items: flex-start;
   margin: 5px; /* Margen general para separar del borde de la página */
   display: grid;
-  grid-template-columns: 6fr 1fr;
+  grid-template-columns: 5fr 1.5fr;
   grid-template-areas: "content-section advertisement-section";
 }
 
@@ -343,6 +343,7 @@ ul li {
   grid-area: advertisement-section;
   flex: 1; /* Utilizar espacio flexible */
   text-align: center;
+  
 }
 
 .advertisement-section h3 {
@@ -354,12 +355,17 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px; /* Espacio superior para separar del contenido anterior */
 }
 
 .advertisement-section .advertisements img {
-  width: 50%;
+
+
+  width: 50%; /* Ajusta el tamaño deseado según tu diseño */
   height: auto;
-  margin-bottom: 10px;
+  max-width: 100%; /* Asegurar que las imágenes no se desborden */
+  margin-bottom: 35px; /* Aumentar el espacio vertical entre las imágenes */
+  
 }
 
 
