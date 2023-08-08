@@ -5,8 +5,23 @@ html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    background-color: var(--color-background);
     
 
+}
+:root {
+  /* Colores principales */
+  --color-primary: #f9f9f9;   /* Blanco hueso */
+  --color-secondary: #dcdcdc; /* Gris claro */
+
+  /* Colores de acento */
+  --color-accent: #e74c3c;    /* Rojo intenso */
+
+  /* Colores de fondo */
+  --color-background: #f5f5f5; /* Gris claro */
+
+  /* Colores de texto */
+  --color-text: #333333;       /* Negro suave */
 }
 
 iframe {
@@ -23,18 +38,19 @@ main {
 /* Estilos para el header */
 header {
     width: 100%;
-    background-color: #33B5E5;
-    padding: 10px;
+  /* background-color: #33B5E5;*/
+  background-color: var(--color-accent);
+   /* padding: 10px;*/
     display: grid;
     grid-template-areas: "logo-search  user-navbar"
                          "navbar navbar"
                          "carousel carousel"; /* Agregamos otra fila para el carousel */
     grid-template-columns: 3fr 1fr;
-    gap: 10px;
     align-items: center; /* Centrar verticalmente los elementos dentro del header */
   }
 
 .logo-search{
+  
    display: flex;
     align-items: center; 
 }
@@ -90,7 +106,7 @@ margin-left: 30px;
   /* Estilos para el navbar */
   .navbar {
     grid-area: navbar;
-    background-color: #33B5E5;
+    background-color: var(--color-accent);
     margin: 0;
     padding: 0;
     margin-top: 10px; /* Espacio entre el primer navbar y el segundo */
@@ -126,11 +142,15 @@ margin-left: 30px;
     grid-area: carousel; /* Añadimos la propiedad grid-area para ocupar una sola columna */
     display: flex;
     justify-content: center; /* Centramos horizontalmente */
-    max-width: 300px; /* Ajusta el tamaño máximo del carrusel */
-    margin: 0 auto; /* Centramos el carrusel en la página */
+     /* Ajusta el tamaño máximo del carrusel */
+   /* margin: 0 auto;*/ /* Centramos el carrusel en la página */
+    background-color:var(--color-background);
   }
   
   /* Estilos para el carrusel */
+  .carousel .carousel-inner{
+    max-width: 20%;
+  }
 
   .carousel .carousel-inner .carousel-item {
     display: flex; /* Aseguramos que las imágenes se ajusten correctamente */
@@ -138,9 +158,9 @@ margin-left: 30px;
   }
 
 .carousel .carousel-inner .carousel-item img {
-    max-width: 100%; /* Aseguramos que las imágenes no excedan el tamaño del carrusel */
-    height: auto; /* Ajustamos la altura automáticamente para mantener la relación de aspecto */
-    object-fit: contain; /* Ajustamos el contenido de las imágenes dentro de su contenedor */
+  width: 110%; /* Ajustamos el ancho para estirar ligeramente la imagen */
+  height: auto; /* Ajustamos la altura automáticamente para mantener la relación de aspecto */
+  object-fit: contain; /* Ajustamos el contenido de las imágenes dentro de su contenedor */
   }
   
   .carousel-control-prev-icon,
@@ -163,7 +183,7 @@ margin-left: 30px;
 
 /* Estilos para el footer */
 footer {
-    background-color: #f2f2f2;
+    background-color: var(--color-secondary);
     padding: 20px;
 }
 
@@ -210,120 +230,137 @@ ul li {
 
 /* Estilos para el contenido principal de la seccion productos */
 
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 20px; /* Margen general para separar del borde de la página */
+/* Estilos para el contenedor principal */
+.main-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5px; /* Margen general para separar del borde de la página */
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  grid-template-areas: "content-section advertisement-section";
 }
 
+/* Estilos para la sección de categorías */
 .category-section {
-    width: 100%; /* Ancho del contenedor de categorías */
-    margin-right: 20px; /* Margen derecho para separar de la sección de contenido */
+  flex: 1; /* Utilizar espacio flexible */
+  margin-right: 20px; /* Margen derecho para separar de la sección de contenido */
 }
+
 .category-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.category-section ul {
-    display: flex; /* Flexbox: Se establece el contenedor de categorías como flexible */
-    flex-direction: column; /* Flexbox: Alineación vertical de los elementos */
-    gap: 10px;
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.category-section ul li {
-    list-style: none; /* Quitar viñetas de la lista */
+.category-item {
+  list-style: none; /* Quitar viñetas de la lista */
 }
 
-.category-section ul li a {
-    text-decoration: none;
-    color: #000; /* Cambiar el color del texto según tus preferencias */
+.category-link {
+  text-decoration: none;
+  color: #000; /* Cambiar el color del texto según tus preferencias */
 }
 
-.category-section ul li ul {
-    display: none; /* Ocultar subcategorías por defecto */
-    padding-left: 10px; /* Añadir un poco de espacio para diferenciar las subcategorías */
+.subcategory-list {
+  display: none; /* Ocultar subcategorías por defecto */
+  padding-left: 10px; /* Añadir un poco de espacio para diferenciar las subcategorías */
 }
 
-.category-section ul li:hover ul {
-    display: block; /* Mostrar subcategorías al pasar el mouse sobre la categoría */
+.category-item:hover .subcategory-list {
+  display: block; /* Mostrar subcategorías al pasar el mouse sobre la categoría */
 }
 
+/* Estilos para la sección de contenido */
 .content-section {
-    width: 70%; /* Ancho del contenedor de contenido */
-    margin-right: 20px; /* Margen derecho para separar de la sección de categorías */
+  grid-area: content-section;
+  flex: 2; /* Utilizar espacio flexible */
+  margin-right: 20px; /* Margen derecho para separar de la sección de categorías */
 }
 
 .content-section > section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .content-section > section:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .content-section > section h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la sección de promociones */
+#advertisement-section {
+  position: sticky;
+  top: 20px; /* Ajusta el valor según tu diseño para evitar que se superponga con el contenido */
+  z-index: 1000; /* Asegura que la sección esté por encima del contenido al desplazarse */
 }
 
 .promotions-section {
-    text-align: center;
+  text-align: center;
 }
 
 .promotions-section .promotions {
-    display: flex; /* Flexbox: Se establece el contenedor de promociones como flexible */
-    justify-content: center; /* Flexbox: Alineación horizontal de los elementos */
-    align-items: flex-start; /* Flexbox: Alineación vertical de los elementos */
-    flex-wrap: wrap; /* Flexbox: Permitir el ajuste de los elementos en múltiples líneas */
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .promotion-item {
-    width: 30%; /* Ancho de cada elemento de promoción */
-    text-align: center;
+  width: 30%;
+  text-align: center;
 }
 
 .promotion-item img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
+/* Estilos para la cuadrícula de imágenes */
 .image-grid {
-    display: flex; /* Flexbox: Se establece el contenedor de imágenes como flexible */
-    justify-content: center; /* Flexbox: Alineación horizontal de los elementos */
-    align-items: flex-start; /* Flexbox: Alineación vertical de los elementos */
-    flex-wrap: wrap; /* Flexbox: Permitir el ajuste de los elementos en múltiples líneas */
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .image-grid img {
-    width: 30%; /* Ancho de cada imagen */
-    height: auto;
+  width: 20%;
+  height: auto;
 }
 
+/* Estilos para la sección de publicidad */
 .advertisement-section {
-    width: 20%; /* Ancho del contenedor de publicidad */
-    text-align: center;
+  grid-area: advertisement-section;
+  flex: 1; /* Utilizar espacio flexible */
+  text-align: center;
 }
 
 .advertisement-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .advertisement-section .advertisements {
-    display: flex; /* Flexbox: Se establece el contenedor de publicidades como flexible */
-    flex-direction: column; /* Flexbox: Alineación vertical de los elementos */
-    align-items: center; /* Flexbox: Alineación horizontal de los elementos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advertisement-section .advertisements img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 10px;
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
 }
-
 
 
 
