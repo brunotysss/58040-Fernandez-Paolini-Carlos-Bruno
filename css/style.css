@@ -684,3 +684,48 @@ button[type="submit"] {
   left: 100%;
   margin-left: 0;
 }
+
+
+
+
+/* Estilos generales para el header en dispositivos móviles */
+@media (max-width: 768px) {
+  header {
+    grid-template-areas: "logo"
+                         "search"
+                         "user-navbar"
+                         "navbar"
+                         "carousel";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    text-align: center; /* Centrar el contenido */
+  }
+
+  .logo-search {
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    margin-bottom: 10px; /* Espacio entre logo y búsqueda */
+  }
+
+  .search {
+    margin-left: 0; /* Alinear búsqueda al centro */
+  }
+
+  .user-navbar {
+    order: -1; /* Mover user-navbar al principio */
+    margin-top: 10px; /* Añadir espacio arriba */
+  }
+
+  .navbar {
+    margin-top: 10px; /* Espacio entre el navbar superior e inferior */
+  }
+}
+
+@media (max-width: 768px) {
+  .advertisement-section {
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    padding: 20px;
+  }
+}
