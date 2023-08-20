@@ -62,6 +62,7 @@ header {
     grid-template-columns: 3fr 1fr;
     align-items: center; /* Centrar verticalmente los elementos dentro del header */
   }
+   
 
 .logo-search{
   
@@ -155,6 +156,8 @@ margin-left: 30px;
     background-color: #FFFFFF;
     border-radius: 10px;
   }
+
+
   
   /* Estilos para el carrusel */
   .carousel {
@@ -195,7 +198,6 @@ margin-left: 30px;
     color: white;
   }
   
-  /* Estilos para el carrusel */
 
 
 
