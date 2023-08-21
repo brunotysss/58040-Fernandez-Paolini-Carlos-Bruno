@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Agrega Font Awesome en el <head> de tu HTML -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <title>3D drems Tuc</title>
 </head>
 <body>
+ 
   <header class="header-container">
-    <!--<div class="header-container">-->
-        <div class="logo-search">
+    <div class="logo-search">
       <div class="logo">
         <img src="../img/logoPNG.png" alt="Logo del sitio" class="logo-img">
       </div>
@@ -22,38 +23,87 @@
         <button>Buscar</button>
       </div>
     </div>
-      <div class="user-navbar">
-        <nav>
-          <ul>
-            <li><a href="#">Usuario</a></li>
-            <li><a href="#">Mis Compras</a></li>
-            <li><a href="#">Favoritos</a></li>
-            <li><a href="#">Notificaciones</a></li>
-            <li><a href="#">Carrito</a></li>
-          </ul>
-        </nav>
-      </div>
-   
-  
+    <div class="user-navbar">
+      <nav>
+        <ul>
+          <li><a href="#">Usuario</a></li>
+          <li><a href="#">Mis Compras</a></li>
+          <li><a href="#">Favoritos</a></li>
+          <li><a href="#">Notificaciones</a></li>
+          <li><a href="#">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
     <!-- Navbar -->
     <nav class="navbar">
       <ul>
         <li><a href="../index.html" target="_top">Inicio</a></li>
         <li><a href="./productos.html" target="_top">Productos</a></li>
         <li><a href="./historial.html" target="_top">Historial</a></li>
+        <li><a href="./nosotros.html" target="_top">Nosotros</a></li>
         <li><a href="./servicios.html" target="_top">Servicios</a></li>
-        <li><a href="./contacto.html" target="_top">Contacto</a></li>
-        <li><a href="./ayuda.html" target="_top">Ayuda</a></li>
+        <li><a href="./seones/contacto.html" target="_top">Contacto</a></li>
+        <li><a href="./secciones/ayuda.html" target="_top">Ayuda</a></li>
       </ul>
     </nav>
   
     <!-- Carrusel -->
     <div class="carousel">
-      <!-- Aquí van las imágenes del carrusel y los controles si los necesitas -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/publicidad-1.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/publicidad-2.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/publicidad-2.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   </header>
-<!-- Contenido principal de la página -->
-    <main></main>
+  
+    <!-- Contenido principal de la página -->
+    
+
+      
+    <main class="main-nosotros">
+      <section class="intro">
+        <h1>Sobre Nosotros</h1>
+        <p>Tu introducción aquí... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem suscipit assumenda obcaecati excepturi voluptatibus ea vitae ullam debitis voluptatem voluptate ipsam quia, consequuntur saepe aut libero aspernatur eligendi minus tenetur.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor numquam ab, quisquam, hic, dignissimos perspiciatis asperiores quo voluptas quis doloremque cum. Ea magni nostrum dolores omnis repudiandae blanditiis sint.
+        </p>
+      </section>
+      <section class="team">
+        <div class="animation-container">
+          <div class="image">
+            <img src="../img/publicidad 2.webp" alt="Equipo">
+          </div>
+          <div class="text">
+            <h2>Nuestro Equipo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+        </div>
+      </section>
+      <section class="tittle-2">
+        <h2>IMPRIME TU IMAGINACION</h2>
+      </section>
+      <section class="values">
+        <h2>Nuestros Valores</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </section>
+    </main>
+  
     <footer>
         <div class="footer-container">
             <div class="social-media">
@@ -86,5 +136,6 @@
           <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
