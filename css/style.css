@@ -671,8 +671,7 @@ button[type="submit"] {
     overflow: hidden;
     transition: height 0.5s ease-in-out; }
   .main-nosotros .intro {
-    background-color: #000;
-    margin-top: -15%; }
+    background-color: #000; }
     .main-nosotros .intro h1 {
       /* Apply the animation */
       animation: slideInTitle 1.5s ease-in-out; }
@@ -706,6 +705,15 @@ button[type="submit"] {
     transform: translateX(0);
     opacity: 1; }
   .main-nosotros .team .animation-container:hover .image img {
-    animation: slideInImage 1s ease-in-out forwards; }
+    animation: slideInImage 1s ease-in-out forwards;
+    animation-fill-mode: forwards;
+    /* Detener la animación una vez completada */ }
   .main-nosotros .values {
     background-color: #000; }
+
+/* Estilos para el contenedor principal del index de la pagina principal MAIN */
+.main-index {
+  /* ... otros estilos ... */
+  margin-top: 100px;
+  /* Agrega un margen superior para dejar espacio al navbar */
+  margin-bottom: 10px; }

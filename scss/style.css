@@ -737,7 +737,6 @@ button[type=submit] {
 }
 .main-nosotros .intro {
   background-color: #000;
-  margin-top: -15%;
 }
 .main-nosotros .intro h1 {
   /* Apply the animation */
@@ -777,7 +776,15 @@ button[type=submit] {
 }
 .main-nosotros .team .animation-container:hover .image img {
   animation: slideInImage 1s ease-in-out forwards;
+  animation-fill-mode: forwards; /* Detener la animación una vez completada */
 }
 .main-nosotros .values {
   background-color: #000;
+}
+
+/* Estilos para el contenedor principal del index de la pagina principal MAIN */
+.main-index {
+  /* ... otros estilos ... */
+  margin-top: 100px; /* Agrega un margen superior para dejar espacio al navbar */
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -70,6 +70,7 @@
     
      display: flex;
       align-items: center; 
+      
   }
   .logo-search:hover{
     display: flex;
@@ -809,11 +810,13 @@
 
   .intro {
     background-color: $color-background;
-    margin-top: -15%;
+  //  margin-top: -15%;
+    
   //  animation: slideIn 1s ease-in-out;
     h1 {
       /* Apply the animation */
       animation: slideInTitle 1.5s ease-in-out;
+  
       
     }
     p {
@@ -860,6 +863,7 @@
 
     .animation-container:hover .image img {
       animation: slideInImage 1s ease-in-out forwards;
+      animation-fill-mode: forwards; /* Detener la animación una vez completada */
     }
   }
 
@@ -868,3 +872,10 @@
   }
 }
 
+
+/* Estilos para el contenedor principal del index de la pagina principal MAIN */
+.main-index {
+  /* ... otros estilos ... */
+  margin-top: 100px; /* Agrega un margen superior para dejar espacio al navbar */
+  margin-bottom: 10px;
+}
