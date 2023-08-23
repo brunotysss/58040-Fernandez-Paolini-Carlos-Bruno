@@ -467,6 +467,10 @@
   }
   
   
+
+
+
+  
   
   
   /* Estilos para el contenido principal de la seccion productos */
@@ -770,6 +774,17 @@
     }
   }
 
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 
 
 
@@ -806,22 +821,38 @@
     flex-direction: column;
     overflow: hidden;
     transition: height 0.5s ease-in-out;
+
+
+    
   }
 
   .intro {
     background-color: $color-background;
-  //  margin-top: -15%;
+    background-image: url('../img/fondo-nosotros.jpg');
+    background-color: rgba(67, 164, 162, 0.7); /* Color con transparencia */
+    background-blend-mode: multiply; /* Mezcla de colores */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
   //  animation: slideIn 1s ease-in-out;
     h1 {
       /* Apply the animation */
       animation: slideInTitle 1.5s ease-in-out;
+      color: $color-letters; /* Color blanco más fuerte */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto para mejor legibilidad */    
   
       
     }
     p {
       /* Apply the animation */
       animation: slideInParagraph 1.5s ease-in-out;
+      color: $color-letters; /* Color blanco más fuerte */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto para mejor legibilidad */
+    /* Ajusta el centrado del párrafo */
+    text-align: center;
+    margin: 0 auto; /* Para centrar horizontalmente */
     }
   }
 
@@ -835,6 +866,11 @@
       width: 100%;
       height: 100%;
       position: relative;
+
+      &:hover {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     .text {
@@ -843,6 +879,7 @@
       transform: translateX(100%);
       transition: transform 1s ease-in-out;
       opacity: 0;
+      
     }
 
     .image {
@@ -869,7 +906,19 @@
 
   .values {
     background-color: $color-background;
+   
+    .values-title {
+      opacity: 0; /* Inicialmente ocultar el título */
+   
+      top: 0; /* Posición inicial en la parte superior */
+      left: 50%; /* Centrar horizontalmente */
+      transform: translateX(-50%); /* Centrar horizontalmente */
+      animation: slideInFromTop $animation-duration ease-in-out;
+      animation-fill-mode: forwards; /* Mantener los estilos finales después de la animación */
+    }
   }
+
+
 }
 
 

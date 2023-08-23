@@ -643,6 +643,14 @@ button[type="submit"] {
     /* Cambia el valor para ajustar la posición */
     opacity: 1; } }
 
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 /*
 
   @keyframes slideIn {
@@ -671,13 +679,33 @@ button[type="submit"] {
     overflow: hidden;
     transition: height 0.5s ease-in-out; }
   .main-nosotros .intro {
-    background-color: #000; }
+    background-color: #000;
+    background-image: url("../img/fondo-nosotros.jpg");
+    background-color: rgba(67, 164, 162, 0.7);
+    /* Color con transparencia */
+    background-blend-mode: multiply;
+    /* Mezcla de colores */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
     .main-nosotros .intro h1 {
       /* Apply the animation */
-      animation: slideInTitle 1.5s ease-in-out; }
+      animation: slideInTitle 1.5s ease-in-out;
+      color: #FFFFFF;
+      /* Color blanco más fuerte */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      /* Agrega sombra al texto para mejor legibilidad */ }
     .main-nosotros .intro p {
       /* Apply the animation */
-      animation: slideInParagraph 1.5s ease-in-out; }
+      animation: slideInParagraph 1.5s ease-in-out;
+      color: #FFFFFF;
+      /* Color blanco más fuerte */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      /* Agrega sombra al texto para mejor legibilidad */
+      /* Ajusta el centrado del párrafo */
+      text-align: center;
+      margin: 0 auto;
+      /* Para centrar horizontalmente */ }
   .main-nosotros .team .animation-container {
     display: flex;
     align-items: center;
@@ -686,6 +714,9 @@ button[type="submit"] {
     width: 100%;
     height: 100%;
     position: relative; }
+    .main-nosotros .team .animation-container:hover {
+      transform: translateY(0);
+      opacity: 1; }
   .main-nosotros .team .text {
     width: 50%;
     /* Ajustar el ancho del texto */
@@ -710,10 +741,23 @@ button[type="submit"] {
     /* Detener la animación una vez completada */ }
   .main-nosotros .values {
     background-color: #000; }
+    .main-nosotros .values .values-title {
+      opacity: 0;
+      /* Inicialmente ocultar el título */
+      top: 0;
+      /* Posición inicial en la parte superior */
+      left: 50%;
+      /* Centrar horizontalmente */
+      transform: translateX(-50%);
+      /* Centrar horizontalmente */
+      animation: slideInFromTop 1s ease-in-out;
+      animation-fill-mode: forwards;
+      /* Mantener los estilos finales después de la animación */ }
 
 /* Estilos para el contenedor principal del index de la pagina principal MAIN */
 .main-index {
   /* ... otros estilos ... */
+  border: yellow 1px solid;
   margin-top: 100px;
   /* Agrega un margen superior para dejar espacio al navbar */
   margin-bottom: 10px; }
