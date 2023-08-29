@@ -67,7 +67,9 @@ main {
   background-color: var(--color-accent);
   /* padding: 10px;*/
   display: grid;
-  grid-template-areas: "logo-search  user-navbar-primary" "user-navbar-secondary ofertaButton" "carousel carousel";
+  grid-template-areas: "logo-search  user-navbar-primary"
+ "user-navbar-secondary ofertaButton"
+ "carousel carousel";
   /* Agregamos otra fila para el carousel */
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -627,7 +629,11 @@ button[type="submit"] {
 /* Estilos generales para el header en dispositivos móviles */
 @media (max-width: 768px) {
   header {
-    grid-template-areas: "logo" "search" "user-navbar" "navbar" "carousel";
+    grid-template-areas: "logo"
+ "search"
+ "user-navbar"
+ "navbar"
+ "carousel";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
     text-align: center;
