@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Agrega Font Awesome en el <head> de tu HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>3D Dreams Tuc</title>
+</head>
+<body>
+  <header class="header-container">
+    <!--<div class="header-container">-->
+        <div class="logo-search">
+      <div class="logo">
+        <img src="../img/logoPNG.png" alt="Logo del sitio" class="logo-img">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Buscar...">
+        <button>Buscar</button>
+      </div>
+    </div>
+    <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+    <div class="user-navbar-primary">
+      <nav>
+        <ul>
+          <li><a href="#">Usuario</a></li>
+          <li><a href="#">Mis Compras</a></li>
+          <li><a href="#">Favoritos</a></li>
+          <li><a href="#">Notificaciones</a></li>
+          <li><a href="#">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Navbar -->
+    <div class="user-navbar-secondary">
+    <nav >
+      <ul>
+        <li><a href="../index.html" target="_top">Inicio</a></li>
+        <li><a href="./productos.html" target="_top">Productos</a></li>
+        <li><a href="./historial.html" target="_top">Historial</a></li>
+        <li><a href="./nosotros.html" target="_top">Nosotros</a></li>
+        <li><a href="./servicios.html" target="_top">Servicios</a></li>
+        <li><a href="./contacto.html" target="_top">Contacto</a></li>
+        <li><a href="./ayuda.html" target="_top">Ayuda</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+  <div class="ofertaButton">
+    <a href="./productos.html">Ofertas por tiempo limitado</a>
+</div>
+    <!-- Carrusel -->
+    <div class="carousel">
+      <!-- Aquí van las imágenes del carrusel y los controles si los necesitas -->
+    </div>
+  </header>
+
+ <main class="main-productos">
+    <section class="category-section">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Todas las categorías</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="impresorasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Impresoras 3D <span class="arrow-down"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="impresorasDropdown">
+                <a class="dropdown-item" href="#">Accesorios</a>
+                <a class="dropdown-item" href="#">Modelo de prueba</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="disenoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Diseño artístico <span class="arrow-down"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="disenoDropdown">
+                <a class="dropdown-item" href="#">Placas 2D y Logos</a>
+                <a class="dropdown-item" href="#">Esculturas</a>
+                <a class="dropdown-item" href="#">Lámparas</a>
+                <a class="dropdown-it em" href="#">Otro arte y diseño</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="casaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Casa <span class="arrow-down"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="casaDropdown">
+                <a class="dropdown-item" href="#">Cocina</a>
+                <a class="dropdown-item" href="#">Baño</a>
+                <a class="dropdown-item" href="#">Dormitorio</a>
+                <a class="dropdown-item" href="#">Decoración del hogar</a>
+                <a class="dropdown-item" href="#">Oficina</a>
+                <a class="dropdown-item" href="#">Mascota</a>
+                <a class="dropdown-item" href="#">Sala</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    </section>
+    <section class="product-section">
+      <h2>Listado de productos</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <div class="card">
+            <div class="img-container">
+              <img src="../img/225-2256239_web-en-construccion-png-sitio-en-construccion.jpg" class="card-img-top" alt="Producto 1">
+              <!-- Botón "Agregar al carrito" -->
+              <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Producto 1</h3>
+              <p class="card-text">$99.99</p>
+              <p class="installments">6 cuotas sin interés</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="card">
+            <div class="img-container">
+              <img src="../img/225-2256239_web-en-construccion-png-sitio-en-construccion.jpg" class="card-img-top" alt="Producto 1">
+              <!-- Botón "Agregar al carrito" -->
+              <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Producto 1</h3>
+              <p class="card-text">$99.99</p>
+              <p class="installments">6 cuotas sin interés</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="card">
+            <div class="img-container">
+              <img src="../img/225-2256239_web-en-construccion-png-sitio-en-construccion.jpg" class="card-img-top" alt="Producto 1">
+              <!-- Botón "Agregar al carrito" -->
+              <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Producto 1</h3>
+              <p class="card-text">$99.99</p>
+              <p class="installments">6 cuotas sin interés</p>
+            </div>
+          </div>
+        </div>
+        <!-- Agregar más productos aquí -->
+        <div class="product-item">
+          <div class="card">
+            <div class="img-container">
+              <img src="../img/225-2256239_web-en-construccion-png-sitio-en-construccion.jpg" class="card-img-top" alt="Producto 2">
+              <!-- Botón "Agregar al carrito" -->
+              <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Producto 2</h3>
+              <p class="card-text">$129.99</p>
+              <p class="installments">3 cuotas sin interés</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Fin de los productos -->
+      </div>
+      <div class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Siguiente</a>
+      </div>
+    </section>
+  </main>
+  
+  
+    <footer>
+      <div class="footer-container">
+          <div class="social-media">
+              <h3>Redes Sociales</h3>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+              </ul>
+          </div>
+          <div class="site-links">
+              <h3>Sitios</h3>
+              <ul>
+                  <li><a href="#">Sitio 1</a></li>
+                  <li><a href="#">Sitio 2</a></li>
+                  <li><a href="#">Sitio 3</a></li>
+              </ul>
+          </div>
+          <div class="help">
+              <h3>Ayuda</h3>
+              <p>¿Necesitas ayuda? Contáctanos...</p>
+          </div>
+          <div class="account">
+              <h3>Cuenta</h3>
+              <p>Inicia sesión o crea una cuenta...</p>
+          </div>
+      </div>
+      <button class="more-info-button">Más Información</button>
+      <a href="https://wa.me/NUMERO_DE_TELEFONO" class="whatsapp-icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+</body>
+</html>
