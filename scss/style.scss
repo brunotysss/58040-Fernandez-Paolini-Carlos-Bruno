@@ -24,10 +24,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+   
     text-decoration: none;
   }
-    //  outline : 2px solid red;
+    //  outline : 2px solid red;  list-style: none;
   body,
   html {
       margin: 0;
@@ -80,7 +80,6 @@
   border-radius: 10px;
 }*/
 .user-navbar-secondary {
-  margin-top: 20px; /* Ajusta el valor según el espacio deseado */
 
 }
 
@@ -149,7 +148,7 @@
   /* Estilos para el menú de navegación */
   .navbar ul {
     display: flex;
-    list-style: none;
+    //list-style: none;
     padding: 0;
   }
   
@@ -178,10 +177,7 @@ margin-right: 20px;
   /* Estilos de tu menú */
 
 
-/* Mostrar el menú cuando el botón se hace clic y el menú está enfocado */
-.navbar-toggler:focus + .collapse {
-  display: block;
-}
+
     
     /* Estilos para el carrusel */
     .carousel {
@@ -557,6 +553,9 @@ margin-right: 20px;
     ;
   }
 
+  .user-navbar-primary {
+    margin-right: 0; /* Aquí elimina el margen derecho o establece el valor deseado para dispositivos estrechos */
+}
 
 
   .logo-search {
@@ -592,6 +591,12 @@ margin-right: 20px;
 }
 
 
+/* Estilos para tamaños de pantalla mayores o iguales a 768px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .user-navbar-primary {
+      margin-right: 15px; /* Cambia el valor a tu preferencia */
+  }
+}
 
 
 
@@ -864,6 +869,16 @@ margin-right: 20px;
     .navbar {
       margin-top: 10px; /* Espacio entre el navbar superior e inferior */
     }
+
+
+
+    .user-navbar-secondary {
+    margin-top: 0px;
+  }
+  
+  .user-navbar-secondary .nav-item {
+    margin-top: 0px; /* Ajusta el margen derecho de cada elemento del menú */
+  }
   }
   
   @keyframes slideIn {
@@ -920,6 +935,7 @@ margin-right: 20px;
       transform: translateY(0);
       opacity: 1;
     }
+
   }
 
 

@@ -31,7 +31,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none; }
 
 body,
@@ -75,10 +74,6 @@ iframe {
   background-color: #FFFFFF;
   border-radius: 10px;
 }*/
-.user-navbar-secondary {
-  margin-top: 20px;
-  /* Ajusta el valor según el espacio deseado */ }
-
 .header-container {
   display: flex;
   flex-direction: column;
@@ -140,7 +135,6 @@ iframe {
 /* Estilos para el menú de navegación */
 .navbar ul {
   display: flex;
-  list-style: none;
   padding: 0; }
 
 .navbar li {
@@ -159,10 +153,6 @@ iframe {
   color: #555; }
 
 /* Estilos de tu menú */
-/* Mostrar el menú cuando el botón se hace clic y el menú está enfocado */
-.navbar-toggler:focus + .collapse {
-  display: block; }
-
 /* Estilos para el carrusel */
 .carousel {
   display: flex;
@@ -480,6 +470,9 @@ ul li {
     display: grid;
     grid-template-columns: 6fr;
     grid-template-areas: "advertisement-section" "content-section"; }
+  .user-navbar-primary {
+    margin-right: 0;
+    /* Aquí elimina el margen derecho o establece el valor deseado para dispositivos estrechos */ }
   .logo-search {
     flex-direction: row;
     /* Cambiar la dirección a horizontal */
@@ -505,6 +498,12 @@ ul li {
   .search button {
     padding: 10px;
     font-size: 16px; } }
+
+/* Estilos para tamaños de pantalla mayores o iguales a 768px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .user-navbar-primary {
+    margin-right: 15px;
+    /* Cambia el valor a tu preferencia */ } }
 
 /* Estilos generales de la seccion contacto*/
 /* Estilos para el contenido principal de la seccion del html  */
@@ -705,7 +704,12 @@ button[type="submit"] {
     /* Añadir espacio arriba */ }
   .navbar {
     margin-top: 10px;
-    /* Espacio entre el navbar superior e inferior */ } }
+    /* Espacio entre el navbar superior e inferior */ }
+  .user-navbar-secondary {
+    margin-top: 0px; }
+  .user-navbar-secondary .nav-item {
+    margin-top: 0px;
+    /* Ajusta el margen derecho de cada elemento del menú */ } }
 
 @keyframes slideIn {
   0% {
